@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
-import Chat from "@/Components/chat";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Chat from "@/Components/chat/Chat";
 
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
       <div className="app">
         <BrowserRouter>
         <Routes>
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/" element={<Chat />} />
         </Routes>
         </BrowserRouter>
 
@@ -21,4 +20,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
